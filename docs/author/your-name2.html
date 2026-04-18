@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <title>My Python Notes - Your Name</title>
+
+    <link rel="stylesheet" href="https://narmathachinraj.github.io/pynotes/theme/css/normalize.css" />
+    <link rel="stylesheet" href="https://narmathachinraj.github.io/pynotes/theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="https://narmathachinraj.github.io/pynotes/theme/css/style.css" />
+    <link rel="stylesheet" href="https://narmathachinraj.github.io/pynotes/theme/css/pygments.css" />	
+    <script src="https://narmathachinraj.github.io/pynotes/theme/js/modernizr.js"></script>
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1><a href="https://narmathachinraj.github.io/pynotes">My Python Notes</a></h1>
+    </div>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+        
+        
+
+
+            <article>
+                <a href="https://narmathachinraj.github.io/pynotes/p16.html"><h3 class="article-title">P16</h3></a>
+<h6 class="subheader" title="2026-04-18T00:00:00-04:00">Sat 18 April 2026
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="n">c</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+
+<span class="n">avg</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="n">c</span><span class="p">)</span> <span class="o">/</span> <span class="mi">3</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Average =&quot;</span><span class="p">,</span> <span class="n">avg</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code> 9
+ 4
+ 5
+
+
+Average = 6.0
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter number: &quot;</span><span class="p">))</span>
+<span class="n">temp</span> <span class="o">=</span> <span class="n">num</span>
+<span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">while</span> <span class="n">temp</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">digit</span> <span class="o">=</span> <span class="n">temp</span> <span class="o">%</span> <span class="mi">10</span>
+    <span class="nb">sum</span> <span class="o">+=</span> <span class="n">digit</span> <span class="o">**</span> <span class="mi">3</span>
+    <span class="n">temp</span> <span class="o">//=</span> <span class="mi">10</span>
+
+<span class="k">if</span> <span class="n">num</span> <span class="o">==</span> <span class="nb">sum</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Armstrong&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print …</span></code></pre></div><p class="subheader">Category: <a href="https://narmathachinraj.github.io/pynotes/category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://narmathachinraj.github.io/pynotes/p16.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://narmathachinraj.github.io/pynotes/p17.html"><h3 class="article-title">P17</h3></a>
+<h6 class="subheader" title="2026-04-18T00:00:00-04:00">Sat 18 April 2026
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="n">text</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter text: &quot;</span><span class="p">)</span>
+<span class="n">freq</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="k">for</span> <span class="n">ch</span> <span class="ow">in</span> <span class="n">text</span><span class="p">:</span>
+    <span class="n">freq</span><span class="p">[</span><span class="n">ch</span><span class="p">]</span> <span class="o">=</span> <span class="n">freq</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">ch</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">freq</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Enter text:  8
+
+
+{&#39;8&#39;: 1}
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">text</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter text: &quot;</span><span class="p">)</span>
+<span class="n">result</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+
+<span class="k">for</span> <span class="n">ch</span> <span class="ow">in</span> <span class="n">text</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">ch</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">result</span><span class="p">:</span>
+        <span class="n">result</span> <span class="o">+=</span> <span class="n">ch</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Enter text:  7
+
+
+7
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter number …</span></code></pre></div><p class="subheader">Category: <a href="https://narmathachinraj.github.io/pynotes/category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://narmathachinraj.github.io/pynotes/p17.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://narmathachinraj.github.io/pynotes/p18.html"><h3 class="article-title">P18</h3></a>
+<h6 class="subheader" title="2026-04-18T00:00:00-04:00">Sat 18 April 2026
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter number: &quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Binary =&quot;</span><span class="p">,</span> <span class="nb">bin</span><span class="p">(</span><span class="n">num</span><span class="p">)[</span><span class="mi">2</span><span class="p">:])</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Enter number:  6
+
+
+Binary = 110
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">text</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter text: &quot;</span><span class="p">)</span>
+<span class="n">upper</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">lower</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">for</span> <span class="n">ch</span> <span class="ow">in</span> <span class="n">text</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">ch</span><span class="o">.</span><span class="n">isupper</span><span class="p">():</span>
+        <span class="n">upper</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">elif</span> <span class="n">ch</span><span class="o">.</span><span class="n">islower</span><span class="p">():</span>
+        <span class="n">lower</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Uppercase:&quot;</span><span class="p">,</span> <span class="n">upper</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Lowercase:&quot;</span><span class="p">,</span> <span class="n">lower</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Enter text:  7
+
+
+Uppercase: 0
+Lowercase: 0 …</code></pre></div><p class="subheader">Category: <a href="https://narmathachinraj.github.io/pynotes/category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://narmathachinraj.github.io/pynotes/p18.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://narmathachinraj.github.io/pynotes/p19.html"><h3 class="article-title">P19</h3></a>
+<h6 class="subheader" title="2026-04-18T00:00:00-04:00">Sat 18 April 2026
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+
+<span class="k">if</span> <span class="n">nums</span> <span class="o">==</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">nums</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sorted&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Not sorted&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Sorted
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">5</span>
+
+<span class="n">total</span> <span class="o">=</span> <span class="n">n</span> <span class="o">*</span> <span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
+<span class="n">missing</span> <span class="o">=</span> <span class="n">total</span> <span class="o">-</span> <span class="nb">sum</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Missing number:&quot;</span><span class="p">,</span> <span class="n">missing</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Missing number: 3
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">text</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter sentence: &quot;</span><span class="p">)</span>
+<span class="n">words</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">words</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Enter sentence …</code></pre></div><p class="subheader">Category: <a href="https://narmathachinraj.github.io/pynotes/category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://narmathachinraj.github.io/pynotes/p19.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://narmathachinraj.github.io/pynotes/p2.html"><h3 class="article-title">P2</h3></a>
+<h6 class="subheader" title="2026-04-18T00:00:00-04:00">Sat 18 April 2026
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="n">model_name</span><span class="o">=</span><span class="s2">&quot;AI_Classifier&quot;</span>
+<span class="n">version</span><span class="o">=</span><span class="mf">1.0</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Model Name:&quot;</span><span class="p">,</span><span class="n">model_name</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Version:&quot;</span><span class="p">,</span><span class="n">version</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Model Name: AI_Classifier
+Version: 1.0
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter number: &quot;</span><span class="p">))</span>
+<span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Even&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Odd&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Enter number:  75638
+
+
+Even
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter number: &quot;</span><span class="p">))</span>
+<span class="n">fact</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="o">+</span><span class="mi">1 …</span></code></pre></div><p class="subheader">Category: <a href="https://narmathachinraj.github.io/pynotes/category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://narmathachinraj.github.io/pynotes/p2.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://narmathachinraj.github.io/pynotes/p20.html"><h3 class="article-title">P20</h3></a>
+<h6 class="subheader" title="2026-04-18T00:00:00-04:00">Sat 18 April 2026
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">:</span>
+    <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Length:&quot;</span><span class="p">,</span> <span class="n">count</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Length</span><span class="o">:</span><span class="w"> </span><span class="mi">4</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter number: &quot;</span><span class="p">))</span>
+<span class="n">original</span> <span class="o">=</span> <span class="n">num</span>
+<span class="n">rev</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">while</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">rev</span> <span class="o">=</span> <span class="n">rev</span> <span class="o">*</span> <span class="mi">10</span> <span class="o">+</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">10</span>
+    <span class="n">num</span> <span class="o">//=</span> <span class="mi">10</span>
+
+<span class="k">if</span> <span class="n">original</span> <span class="o">==</span> <span class="n">rev</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Palindrome&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Not palindrome&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Enter number:  4
+
+
+Palindrome …</code></pre></div><p class="subheader">Category: <a href="https://narmathachinraj.github.io/pynotes/category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://narmathachinraj.github.io/pynotes/p20.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://narmathachinraj.github.io/pynotes/p22.html"><h3 class="article-title">P22</h3></a>
+<h6 class="subheader" title="2026-04-18T00:00:00-04:00">Sat 18 April 2026
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
+
+<span class="n">diff</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span> <span class="o">-</span> <span class="nb">min</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Difference:&quot;</span><span class="p">,</span> <span class="n">diff</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Difference</span><span class="o">:</span><span class="w"> </span><span class="mi">15</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter number: &quot;</span><span class="p">))</span>
+
+<span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">num</span> <span class="o">**</span> <span class="mf">0.5</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">==</span> <span class="n">num</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Perfect square&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Not perfect square&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Enter number:  6
+
+
+Not perfect square
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">]</span>
+<span class="n">result</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">result …</span></code></pre></div><p class="subheader">Category: <a href="https://narmathachinraj.github.io/pynotes/category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://narmathachinraj.github.io/pynotes/p22.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://narmathachinraj.github.io/pynotes/p23.html"><h3 class="article-title">P23</h3></a>
+<h6 class="subheader" title="2026-04-18T00:00:00-04:00">Sat 18 April 2026
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">num</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="k">break</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="s2">&quot;is prime&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">2</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="n">prime</span>
+<span class="mf">3</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="n">prime</span>
+<span class="mf">5</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="n">prime</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">text</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter sentence: &quot;</span><span class="p">)</span>
+<span class="n">words</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+
+<span class="n">longest</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">words</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="nb">len …</span></code></pre></div><p class="subheader">Category: <a href="https://narmathachinraj.github.io/pynotes/category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://narmathachinraj.github.io/pynotes/p23.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://narmathachinraj.github.io/pynotes/p24.html"><h3 class="article-title">P24</h3></a>
+<h6 class="subheader" title="2026-04-18T00:00:00-04:00">Sat 18 April 2026
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="n">start</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Start: &quot;</span><span class="p">))</span>
+<span class="n">end</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;End: &quot;</span><span class="p">))</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Start</span><span class="o">:</span><span class="w">  </span><span class="mi">4</span>
+<span class="n">End</span><span class="o">:</span><span class="w">  </span><span class="mi">8</span>
+
+
+<span class="mi">4</span>
+<span class="mi">6</span>
+<span class="mi">8</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
+
+<span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="n">x</span><span class="p">:</span>
+        <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Count …</span></code></pre></div><p class="subheader">Category: <a href="https://narmathachinraj.github.io/pynotes/category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://narmathachinraj.github.io/pynotes/p24.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://narmathachinraj.github.io/pynotes/p25.html"><h3 class="article-title">P25</h3></a>
+<h6 class="subheader" title="2026-04-18T00:00:00-04:00">Sat 18 April 2026
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="n">text</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter text: &quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="s2">&quot;-&quot;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Enter text:  ramu
+
+
+ramu
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter number: &quot;</span><span class="p">))</span>
+<span class="n">square</span> <span class="o">=</span> <span class="n">num</span> <span class="o">*</span> <span class="n">num</span>
+<span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">while</span> <span class="n">square</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">sum</span> <span class="o">+=</span> <span class="n">square</span> <span class="o">%</span> <span class="mi">10</span>
+    <span class="n">square</span> <span class="o">//=</span> <span class="mi">10</span>
+
+<span class="k">if</span> <span class="nb">sum</span> <span class="o">==</span> <span class="n">num</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Neon number&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Not neon&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Enter number:  34
+
+
+Not neon
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6 …</span></code></pre></div><p class="subheader">Category: <a href="https://narmathachinraj.github.io/pynotes/category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://narmathachinraj.github.io/pynotes/p25.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+            <!-- /#posts-list -->
+<div class="pagination-centered">
+<h6 class="subheader">Page 2 of 4</h6>
+
+<p>
+            <a href="https://narmathachinraj.github.io/pynotes/author/your-name.html">&laquo; Prev</a>
+
+        <a href="https://narmathachinraj.github.io/pynotes/author/your-name3.html">Next &raquo;</a>
+</p>
+</div>
+
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Site</h5>
+        <ul class="side-nav">
+            <li><a href="https://narmathachinraj.github.io/pynotes/archives.html">Archives</a>
+            <li><a href="https://narmathachinraj.github.io/pynotes/tags.html">Tags</a>
+        </ul>
+
+		
+        <h5 class="sidebar-title">Categories</h5>
+        <ul class="side-nav">
+            <li><a href="https://narmathachinraj.github.io/pynotes/category/basics.html">basics</a></li>
+            <li><a href="https://narmathachinraj.github.io/pynotes/category/misc.html">misc</a></li>
+            <li><a href="https://narmathachinraj.github.io/pynotes/category/narmatha.html">narmatha</a></li>
+            <li><a href="https://narmathachinraj.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
+   
+        </ul>
+
+		
+        <h5 class="sidebar-title">Social</h5>
+        <ul class="side-nav">
+            <li><a href="https://github.com/narmathachinraj">GitHub</a></li>
+            <li><a href="www.linkedin.com/in/narmatha-chinraj">LinkedIn</a></li>
+        </ul>
+
+    </aside> <!-- End Sidebar -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+    <div class="large-12 columns">
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+              <!--                  <p>My Python Notes by Narmatha Chinraj</p> -->
+            </div>
+            </div>
+    </div>
+</footer>
+</body>
+</html>
