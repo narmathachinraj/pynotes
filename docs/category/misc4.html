@@ -4,7 +4,7 @@
     <!-- Set the viewport width to device width for mobile -->
     <meta name="viewport" content="width=device-width" />
 
-    <title>P13</title>
+    <title>My Python Notes - misc</title>
 
     <link rel="stylesheet" href="https://narmathachinraj.github.io/pynotes/theme/css/normalize.css" />
     <link rel="stylesheet" href="https://narmathachinraj.github.io/pynotes/theme/css/foundation.min.css" />
@@ -42,62 +42,68 @@
 
     <!-- Main Blog Content -->
     <div class="large-9 columns">
-<article>
-    <header>
-        <h3 class="article-title"><a href="https://narmathachinraj.github.io/pynotes/p13.html" rel="bookmark"
-        title="Permalink to P13">P13</a></h3>
-    </header>
+        
+        
 
+
+            <article>
+                <a href="https://narmathachinraj.github.io/pynotes/py32.html"><h3 class="article-title">Py32</h3></a>
 <h6 class="subheader" title="2026-05-03T00:00:00-04:00">Sun 03 May 2026
 </h6>
 
 
-    <div class="highlight"><pre><span></span><code><span class="n">ch</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter character: &quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ASCII value =&quot;</span><span class="p">,</span> <span class="nb">ord</span><span class="p">(</span><span class="n">ch</span><span class="p">))</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Taking input from user</span>
+<span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+
+<span class="c1"># Printing the number</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Given number:&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+
+<span class="c1"># Printing unit digit</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;unit digit:&quot;</span><span class="p">,</span> <span class="n">a</span> <span class="o">%</span> <span class="mi">10</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>Enter character:  5
+<div class="highlight"><pre><span></span><code> 23
 
 
-ASCII value = 53
+Given number: 23
+unit digit: 3
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">minutes</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter minutes: &quot;</span><span class="p">))</span>
-<span class="n">hours</span> <span class="o">=</span> <span class="n">minutes</span> <span class="o">/</span> <span class="mi">60</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hours =&quot;</span><span class="p">,</span> <span class="n">hours</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">show_number</span><span class="p">():</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+
+<span class="n">show_number</span><span class="p">()</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>Enter minutes:  5
-
-
-Hours = 0.08333333333333333
+<div class="highlight"><pre><span></span><code><span class="mf">10</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Taking input</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
 
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="mf">5</span>
-<span class="mf">10</span>
-<span class="mf">15</span>
-<span class="mf">20</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 0</strong></p>
-<p class="subheader">Category: <a href="https://narmathachinraj.github.io/pynotes/category/misc.html">misc</a>
+<span class="c1"># Checking the number</span>
+<span class="k">if</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;positive …</span></code></pre></div><p class="subheader">Category: <a href="https://narmathachinraj.github.io/pynotes/category/misc.html">misc</a>
 
 </p>
 
 
 
+                <a class="button radius secondary small right" href="https://narmathachinraj.github.io/pynotes/py32.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
 
-</article>
+            <!-- /#posts-list -->
+<div class="pagination-centered">
+<h6 class="subheader">Page 4 of 4</h6>
+
+<p>
+            <a href="https://narmathachinraj.github.io/pynotes/category/misc3.html">&laquo; Prev</a>
+
+</p>
+</div>
+
     </div>
     <!-- End Main Content -->
 
